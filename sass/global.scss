@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600|Playfair+Display&display=swap');
+
+// Overrides
+* { margin: 0; }
+a { text-decoration: none; }
+html {
+  font-family: 'Open Sans', 'Source Sans Pro', 'Roboto', 'Segoe UI', 'Arial', sans-serif;
+}
+
+/**** Global classes ****/
+// Font sizes
+.font-s {
+  font-size: 1.1rem;
+  @include sm {
+    font-size: 1rem;
+  }
+}
+.font-m {
+  font-size: 1.25rem;
+  @include sm {
+    font-size: 1.1rem;
+  }
+}
+.font-l {
+  font-size: 1.5rem;
+  @include sm {
+    font-size: 1.3rem;
+  }
+}
+.font-xl {
+  font-size: 2.5rem;
+  @include sm {
+    font-size: 2rem;
+  }
+}
+// Font-weights
+.weight-l {
+  font-weight: 300;
+}
+.weight-r {
+  font-weight: 400;
+}
+.weight-m {
+  font-weight: 500;
+}

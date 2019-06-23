@@ -1,0 +1,37 @@
+// Screen sizes
+$xl: 1920px;
+$lg: 1440px;
+$md: 1024px;
+$sm: 768px;
+$xs: 360px;
+
+// Extra small
+@mixin sm() {
+  @media (max-width: $xs) {
+    @content;
+  }
+}
+// Small screens
+@mixin xs() {
+  @media (max-width: $sm) {
+    @content;
+  }
+}
+// Medium screens
+@mixin md() {
+  @media (max-width: $md) {
+    @content;
+  }
+}
+// Large screens
+@mixin lg() {
+  @media (max-width: $lg) {
+    @content;
+  }
+}
+// Extra large screens
+@mixin xl() {
+  @media (max-width: $xl) {
+    @content;
+  }
+}

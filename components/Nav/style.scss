@@ -1,0 +1,56 @@
+nav {
+  // Flex
+  display: flex;
+  align-items: center;
+  // Push all links in
+  padding: 0 4vw;
+  // At least 75px
+  min-height: 75px;
+  background: $darker;
+  position: relative; // Position the pink graphic relatively
+
+  // Each link
+  .nav-link {
+    z-index: 100;
+    margin: 0 1vw; // Spacing between links
+    display: block;
+    color: white;
+    transition: 100ms ease-in-out;
+
+    // The main link
+    &--main {
+      font-weight: 600 !important;
+    }
+    
+    // Button link
+    &--button {
+      border-radius: 10px;
+      background: white;
+      color: $primary;
+      padding: 10px 20px;
+
+      // Hover effect for the button
+      &:hover {
+        background: #ffffffcb;
+      }
+    }
+
+    // Hover effect ( not for the button )
+    &:hover:not(.nav-link--button) {
+      color: #ffffffb0;
+    }
+  }
+
+  // Pink graphic on the right
+  .nav-pink {
+    position: absolute;
+    top: 0;
+    right: 0;
+    // Size adjustment
+    height: 180px;
+
+    // Make smaller on different screens
+    @include lg { height: 165px; }
+    @include md { height: 150px; }
+  }
+}
